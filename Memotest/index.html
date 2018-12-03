@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pangolin|Patrick+Hand" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="ingresoDatos" id="ingresoDatos">
+        <h2> Memotest</h2>
+        <div class="saludo">
+            Hola👋! vamos a jugar al Memotest
+            Pero antes de empezar... </br>
+            cual es tu nombre ❓
+        </div>
+        <input type="text" class="ingresoNombre" id="name" placeholder="Nombre">
+        <p>
+            ¿Con que dificultad te gustaría jugar?
+        </p>
+        <div>
+            <input type="button" id='facil' class="facil nivel" value="Facil">
+        </div>
+        <div>
+            <input type="button" id="intermedio" class="intermedio nivel" value="Intermedio">
+        </div>
+        <div>
+            <input type="button" id="dificil" class="dificil nivel" value="Dificil">
+        </div>
+        <div id="campo" class="ups ocultar">
+            UPSS... El nombre es requerido
+        </div>
+    </div>
+    <div class="contenedor ocultar">
+        <div id="presentacion" class="presentacion">
+            <h2>Memotest</h2>
+            <p class="nombre"> Hola
+                <span id="nombre"> </span>
+            </p>
+            <p>Encontrá todos los pares en menos de
+                <span id="movimientos" class="intentos"> </span> intentos
+            </p>
+            <p>Nivel </p>
+            <p id="level"> </p>
+        </div>
+        <div id='imgTap' class="imgTapada">
+            <img class="tapada" src="images/tapada.jpg" data-img="" id="uno">
+            <img class="tapada" src="images/tapada.jpg" data-img="" id="dos">
+            <img class="tapada" src="images/tapada.jpg" data-img="" id="tres">
+            <img class="tapada" src="images/tapada.jpg" data-img="" id="cuatro">
+            <img class="tapada" src="images/tapada.jpg" data-img="" id="cinco">
+            <img class="tapada" src="images/tapada.jpg" data-img="" id="seis">
+            <img class="tapada" src="images/tapada.jpg" data-img="" id="siete">
+            <img class="tapada" src="images/tapada.jpg" data-img="" id="ocho">
+            <img class="tapada" src="images/tapada.jpg" data-img="" id="nueve">
+            <img class="tapada" src="images/tapada.jpg" data-img="" id="diez">
+            <img class="tapada" src="images/tapada.jpg" data-img="" id="once">
+            <img class="tapada" src="images/tapada.jpg" data-img="" id="doce">
+        </div>
+        <div id="divIntentos" class="clicks"> intentos:
+            <span id="intentos" class="divIntentos"></span>
+        </div>
+    </div>
+    <div id='ganadores' class="ganadores ocultar">
+        <p> GANASTE 🎉! con <span id="movs"></span> intentos</p>
+        <p>Ya puedes volver a jugar</p>
+        <button class="recargar"> volver a Jugar</button>
+        <div id="ganadoresData" class="ganadoresData">
+            <div class="contenedorDatos datosGanador">
+                <span class="datos"> Nombre </span>
+                <span class="datos"> Nivel </span>
+                <span class="datos"> Intentos </span>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div id="desafortunado" class="desafortunado ocultar">
+        <p> Lo siento, no has tenido suerte esta vez,💔</p>
+        <p> intentalo de nuevo! </p>
+        <button class="recargar"> volver a Jugar</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="index.js"> </script>
+</body>
+
+</html>
